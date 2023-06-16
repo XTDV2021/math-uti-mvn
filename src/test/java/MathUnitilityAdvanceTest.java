@@ -4,7 +4,6 @@
  */
 
 import com.Thu.mathutil.core.MathUtility;
-import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -24,8 +23,8 @@ public class MathUnitilityAdvanceTest {
     }
 @ParameterizedTest
     @MethodSource(value = "initTestData")
-    public void testFactorialGivenRightArgumentReturnsWell(int n, long expected) {
-        assertEquals(expected, MathUtility.getFactorial(n));
+    public void testFactorialGivenRightArgumentReturnsWell(int n, long expected){
+        assertEquals(expected, MathUtility.getFactotial(n));
     }
   
     // DDT là phần mở rộng thêm cho TDD tức là giúp cho code test (Unit Test)
